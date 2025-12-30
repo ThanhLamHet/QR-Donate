@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Donate • Tech Gold</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="bg-glow"></div>
+
+  <div class="card">
+    <div class="logo">⚡</div>
+
+    <h1>SUPPORT ME</h1>
+    <p class="subtitle">Ủng hộ để mình tiếp tục tạo nội dung chất lượng</p>
+
+    <div class="quick">
+      <button onclick="setAmount(50000)">50K</button>
+      <button onclick="setAmount(100000)">100K</button>
+      <button onclick="setAmount(200000)">200K</button>
+    </div>
+
+    <input type="number" id="amount" placeholder="Nhập số tiền (VND)">
+    <input type="text" id="message" placeholder="Lời nhắn (tuỳ chọn)">
+
+    <button class="main-btn" onclick="createQR()">GENERATE QR</button>
+
+    <div class="qr-box" id="qrBox">
+      <img id="qr">
+      <div class="hint">Scan bằng MB Bank / Mobile Banking</div>
+    </div>
+
+    <div class="footer">
+      © 2025 • Powered by VietQR
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
